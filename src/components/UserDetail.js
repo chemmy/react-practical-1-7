@@ -1,27 +1,18 @@
-import React from 'react';
-import FlagCard from './FlagCard';
+import React, { Fragment } from 'react';
 
 const UserDetail = props => {
-  const { email, jobTitle, avatar, content, countryCode } = props.user;
+  const { email, jobTitle, avatar } = props;
 
   return(
-    <div className="card">      
-      <div className="content">
-        <img 
-          className="right floated tiny ui image" 
-          src={avatar} 
-          alt="img"
-        />
-        <div className="header left floated">{email}</div>
-        <div className="description left floated">{jobTitle}</div>
-      </div>
-      <div className="content">
-        <FlagCard
-          content={content}
-          countryCode={countryCode}
-        />
-      </div>
-    </div>
+    <Fragment>
+      <img 
+        className="right floated tiny ui image" 
+        src={avatar} 
+        alt="img"
+      />
+      <div className="header left floated">{email}</div>
+      <div className="description left floated">{jobTitle}</div>
+    </Fragment>
   )
 };
 

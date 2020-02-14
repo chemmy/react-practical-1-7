@@ -18,6 +18,10 @@
   margin-top: 8px;
 }
 
+.ui.cards {
+  justify-content: space-between;
+}
+
 .card {
   width: 30% !important;
 }

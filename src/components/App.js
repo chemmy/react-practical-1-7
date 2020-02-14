@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import faker from 'faker';
-import UserDetail from './UserDetail';
+import FlagCard from './FlagCard';
 import SearchBar from './SearchBar';
 import Spinner from './Spinner';
 
@@ -48,7 +48,7 @@ export default class App extends Component {
             : searchResults.length
               ? <div className="ui link cards">{
                 searchResults.map(user => (
-                  <UserDetail key={user.id} user={user} />
+                  <FlagCard key={user.id} user={user} />
                 ))
               }</div>
               : <div>No Results!</div>
