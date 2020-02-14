@@ -1,0 +1,31 @@
+.app {
+  margin: 80px;
+}
+
+.search-bar {
+  border: 1px solid #d3d3d3;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 3px;
+}
+
+.search-bar label {
+  font-weight: 700;
+}
+
+.search-bar .ui.input {
+  width: 100%;
+  margin-top: 8px;
+}
+
+.card {
+  width: 30% !important;
+}
+
+.app .ui.cards>.card>.content>.description {
+  clear: none;
+}
+
+.country.image {
+  margin-right: 12px;
+}
